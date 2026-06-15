@@ -1,5 +1,5 @@
-id,character_id,command_name,command,Hit_level
-1,1,Electric Wind God Fist,6n23RP(3과 RP 입력 동시에),상단
-2,1,Devil Fist,66RP,중단
-3,2,Left Axe Kick,66LK,중단
-4,2,Electric Wind Hook Fist,6n23RP(3과 RP 입력 동시에),상단
+id,character_id,skill_name,command
+1,1,Electric Wind God Fist,→n↓↘RP
+2,1,Devil Fist,→→RP
+3,2,Left Axe Kick,→→LK
+4,2,Electric Wind Hook Fist,→n↓↘RP

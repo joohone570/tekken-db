@@ -1,5 +1,5 @@
-id,startup_frame,On_Hit,On_Block
-1,11,+39,+5
-2,16,+13,-9
-3,23,+24,-5
-4,11,+76,+5
+id,skill_id,startup_frame,On_Hit,On_Block
+1,1,11,+39,+5
+2,2,16,+13,-9
+3,3,23,+24,-5
+4,4,11,+76,+5
