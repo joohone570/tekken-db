@@ -159,7 +159,7 @@ def main(page: ft.Page):
 
     character_panel = ft.Container(
         content=ft.Column([
-            ft.Text("캐릭터"),
+            ft.Text("파이"),
             ft.Button("카즈야", on_click=lambda e: select_character(1)),
             ft.Button("진", on_click=lambda e: select_character(2)),
             ft.Button("빅터",on_click=lambda e: select_character(3))
@@ -179,7 +179,7 @@ def main(page: ft.Page):
     move_panel = ft.Row([
         ft.Container(
             content=ft.Column([
-                ft.Text("주력기"),
+                ft.Text("기술"),
                 ft.Button("조회", on_click=show_skills)
             ])
         ),
