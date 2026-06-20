@@ -2,12 +2,12 @@ from abc import ABC, abstractmethod
 import pandas as pd
 
 @abstractmethod
-class Iprimary_skillInterface(ABC):
+class ImoveInterface(ABC):
     def find_by_id(self, id):
         ...
-    def find_by_character_id(self, character_id):
+    def update_fighter_id(self, fighter_id):
         ...
-    def update_skill_name(self, skill_name):
+    def update_move_name(self, move_name):
         ...
     def update_command(self, command):
         ...

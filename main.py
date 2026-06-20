@@ -159,7 +159,7 @@ def main(page: ft.Page):
 
     character_panel = ft.Container(
         content=ft.Column([
-            ft.Text("파이"),
+            ft.Text("파이터"),
             ft.Button("카즈야", on_click=lambda e: select_character(1)),
             ft.Button("진", on_click=lambda e: select_character(2)),
             ft.Button("빅터",on_click=lambda e: select_character(3))
@@ -195,9 +195,9 @@ def main(page: ft.Page):
     ])
 
     page.add(
-        ft.Text("4.1 캐릭터 선택 조회"),
+        ft.Text("4.1 파이터 선택 조회"),
         character_panel,
-        ft.Text("캐릭터 이미지"),
+        ft.Text("파이터 이미지"),
         fighter_image,
         ft.Text("4.2 캐릭터 정보 조회"),
         character_info_panel,
