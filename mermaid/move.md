@@ -4,10 +4,11 @@ sequenceDiagram
     participant DB as DuckDB (tk.db)
     participant CSV as move.csv
 
+     Page->>DB: DROP TABLE IF EXISTS move
     Page->>DB: CREATE TABLE IF NOT EXISTS move
     Page->>CSV: read_csv_auto('data/move.csv')
-    CSV-->>Page: id, fighter_id, move_name, command
-    Page->>DB: INSERT INTO move ON CONFLICT (id) DO NOTHING
+    CSV-->>Page: move data
+    Page->>DB: INSERT OR IGNORE INTO move 
     DB->>DB: FK 확인: fighter_id → fighter.id
-    DB-->>Page: 저장 완료
+    DB-->>Page: Data Stored
 ```

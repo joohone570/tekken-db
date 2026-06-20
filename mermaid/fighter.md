@@ -4,9 +4,10 @@ sequenceDiagram
     participant DB as DuckDB (tk.db)
     participant CSV as fighter.csv
 
+    Page->>DB: DROP TABLE IF EXISTS fighter
     Page->>DB: CREATE TABLE IF NOT EXISTS fighter
     Page->>CSV: read_csv_auto('data/fighter.csv')
-    CSV-->>Page: id, name, nationality, fighting_style
-    Page->>DB: INSERT INTO character ON CONFLICT (id) DO NOTHING
-    DB-->>Page: 저장 완료
+    CSV-->>Page: fighter Data
+    Page->>DB: INSERT OR IGNORE INTO fighter
+    DB-->>Page: Data Stored
 ```
